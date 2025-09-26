@@ -1,0 +1,67 @@
+% ESPAÇAMENTO VERTICAL ELÁSTICO NO TOPO DA PÁGINA
+% \vspace*{\fill} cria um espaço que se expande para empurrar o conteúdo para baixo
+% O asterisco (*) garante que o espaço seja mantido mesmo no topo de uma página
+\vspace*{\fill}
+
+% INÍCIO DO LAYOUT EM DUAS COLUNAS PARA O TÍTULO
+% Primeira coluna: 30% da largura da linha de texto
+\begin{minipage}{0.3\textwidth}
+    % Comando que empurra todo o conteúdo desta coluna para a direita
+    % Como a coluna está vazia, serve apenas para criar espaço em branco à esquerda
+    \hfill
+\end{minipage}%
+% Segunda coluna: 70% da largura da linha de texto
+% O % no final evita espaço indesejado entre as colunas
+\begin{minipage}{0.7\textwidth}
+% AMBIENTE DE ALINHAMENTO À ESQUERDA
+\begin{flushleft}
+% CONFIGURAÇÃO DE FONTE E COR PARA O TÍTULO PRINCIPAL
+\fininha           % Comando personalizado que define peso da fonte (fino)
+\LARGE             % Tamanho de fonte grande
+\color{crp2}       % Cor personalizada "crp2" (provavelmente azul ou similar)
+CARTILHA PARA\\    % Primeira linha do título com quebra manual (\\)
+PRODUÇÃO DE\\      % Segunda linha do título
+
+% MUDANÇA DE PESO E COR PARA A PARTE PRINCIPAL DO TÍTULO
+\media             % Comando personalizado que define peso médio da fonte
+\color{crp1}       % Muda para cor "crp1" (provavelmente a cor principal do CRP)
+\textbf{DOCUMENTOS ESCRITOS\\    % \textbf{} deixa em negrito + quebra de linha
+ANTICAPACITISTAS}  % Continua em negrito
+
+% ESPAÇAMENTO VERTICAL ENTRE TÍTULO E INFORMAÇÕES DE PUBLICAÇÃO
+\vspace*{2\baselineskip}  % Adiciona espaço equivalente a 2 linhas de texto
+                          % \baselineskip = altura padrão de uma linha
+
+% CONFIGURAÇÃO PARA AS INFORMAÇÕES DE PUBLICAÇÃO
+\color{crp3}       % Muda para cor "crp3" (provavelmente uma cor mais sutil)
+\Light             % Comando personalizado para fonte light/leve
+\normalsize        % Retorna ao tamanho normal de fonte
+
+% INFORMAÇÕES DE PUBLICAÇÃO (cada linha quebrada manualmente)
+1º EDIÇÃO\\        % Número da edição
+SÃO PAULO\\        % Cidade de publicação
+2025               % Ano de publicação (sem \\ pois é a última linha)
+
+\end{flushleft}    % Fecha o ambiente de alinhamento à esquerda
+\end{minipage}     % Fecha a segunda coluna
+
+% ESPAÇAMENTO ENTRE O TÍTULO E O LOGO
+\vspace*{\baselineskip}  % Adiciona espaço de uma linha
+
+% SEÇÃO CENTRALIZADA PARA O LOGO
+\begin{center}
+    % LOGO/ASSINATURA COMENTADO - VERSÃO EM TEXTO
+    % Este bloco está todo comentado (%) - seria uma versão em texto do nome da instituição
+    % Provavelmente foi substituído pelo logo em imagem abaixo
+    %\color{crp1}\Light\textit{C\small%    % "C" em itálico, fonte light, cor crp1, tamanho pequeno
+    %onselho }%                             % Resto da palavra "Conselho" em fonte normal
+    %\color{crp1}\normalsize\media\textit{Regional de }%  % "Regional de" em itálico, peso médio
+    %\color{crp1}\normalsize\pesada\textit{PSICOLOGIA }%  % "PSICOLOGIA" em itálico, peso pesado
+    %\color{crp1}\normalsize\media\textit{SP}%            % "SP" em itálico, peso médio
+    
+    % LOGO EM IMAGEM (VERSÃO ATUAL SENDO USADA)
+    \includegraphics[width = 0.75\linewidth]{assinatura_crp.png}
+    % \includegraphics = comando para inserir imagens
+    % [width = 0.75\linewidth] = define largura como 75% da largura da linha
+    % {assinatura_crp.png} = nome do arquivo de imagem
+\end{center}       % Fecha o ambiente centralizado
