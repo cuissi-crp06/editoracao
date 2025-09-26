@@ -1,0 +1,127 @@
+% SEÇÃO: EQUIPE DE ORIENTAÇÃO E FISCALIZAÇÃO
+% Título da primeira equipe técnica
+\CreditoInstitucionalDois{Equipe de Orientação e Fiscalização}
+
+% LAYOUT EM DUAS COLUNAS (PADRÃO USADO EM TODO O DOCUMENTO)
+% Primeira coluna: 3cm de espaço vazio (margem/alinhamento)
+\begin{minipage}{3cm}
+{\null}  % Espaço completamente vazio
+\end{minipage}%
+% Segunda coluna: restante da largura da linha
+\begin{minipage}{\linewidth-3cm}
+\begin{CreditoInstitucional}
+% CARGOS DE LIDERANÇA DA EQUIPE
+\CargoNosCreditos{%
+    Lauren Mariana Mennocchi & \textbf{gerente\newline Técnico-Política}\\
+    % \newline força quebra de linha dentro da célula da tabela
+    % Diferente de \\, o \newline quebra dentro do próprio campo
+    Andrea Gobato Quintavalle & \textbf{coordenadora}\\}
+    
+% DEMAIS MEMBROS DA EQUIPE (segundo bloco)
+\CargoNosCreditos{%
+    Gabriele da Silva Freire e\newline           % Nomes múltiplos na mesma função
+    Rafael Santos Barboza	& especialista técnica/o — psicóloga/o\\
+    % Note o uso de "e\newline" para listar duas pessoas na mesma função
+    
+    Edileine Gomes Marchewsky e\newline          % Novamente dois nomes
+    Regina Sampaio Lott	& profissionais de suporte\newline administrativo\\
+    % O cargo também usa \newline para quebrar "suporte" e "administrativo"
+    }
+\end{CreditoInstitucional}
+\end{minipage}
+
+% SEÇÃO: EQUIPE DE COMUNICAÇÃO
+\CreditoInstitucionalDois{Equipe de Comunicação}
+
+% MESMO PADRÃO DE LAYOUT EM DUAS COLUNAS
+\begin{minipage}{3cm}
+{\null}
+\end{minipage}%
+\begin{minipage}{\linewidth-3cm}
+\begin{CreditoInstitucional}
+% LIDERANÇA DA EQUIPE DE COMUNICAÇÃO
+\CargoNosCreditos{%
+    Edson Ferreira Dias Junior	& \textbf{gerente de\newline \hfill Relações Institucionais}\\
+    % \hfill dentro do cargo empurra "Relações Institucionais" para a direita
+    % Cria um alinhamento especial dentro da célula da tabela
+    Tais Souza	& \textbf{coordenadora}\\
+    }
+    
+% DEMAIS MEMBROS DA EQUIPE DE COMUNICAÇÃO
+\CargoNosCreditos{%
+    Angelo Cuissi e Gislaine Bueno	& jornalistas\\
+    % Dois jornalistas listados juntos
+    
+    Micael Melchiades e Paulo Mota	& \textit{designers}\\
+    % \textit{} deixa "designers" em itálico
+    % Dois designers listados juntos
+    
+   Jefferson Geraldo Rodrigues e\newline         % Quebra manual no meio dos nomes
+    Viviane Doneda Martins Marigo	& profissionais de suporte\newline administrativo\\
+    % Padrão similar à equipe anterior
+    
+   Anisa Feliciano e Mário Lemos	& estagiária/o de\newline Comunicação\\
+   % Cargo quebrado em duas linhas
+   
+    Layza Vitoria Macedo Araújo	& jovem aprendiz\\
+    % Função específica para jovem aprendiz
+    }
+\end{CreditoInstitucional}
+\end{minipage}
+
+% ESPAÇAMENTO VERTICAL ELÁSTICO
+\vspace{\fill}  % Empurra o próximo conteúdo para o final da página
+                % Sem asterisco (*), diferente do \vspace*{\fill} usado na capa
+
+% SEÇÃO DE CRÉDITOS FINAIS E LICENÇA (SEM LAYOUT DE COLUNAS)
+\begin{CreditoInstitucional}
+\begin{center}  % Todo o conteúdo desta seção será centralizado
+
+% CONFIGURAÇÃO DE ESPAÇAMENTO ENTRE LINHAS
+\setasuspacing{\SingleSpacing}  % Define espaçamento simples entre linhas
+                               % Comando personalizado para controlar espaçamento
+
+% TÍTULO DA PUBLICAÇÃO
+\color{crp1}      % Cor principal do CRP
+\footnotesize     % Tamanho de fonte pequeno (menor que \small)
+\textbf{Cartilha para produção de documentos escritos anticapacitistas}
+\vspace{0.2\baselineskip}  % Pequeno espaço após o título
+
+% SUBTÍTULO COM INFORMAÇÃO DA SUBCOMISSÃO
+\color{black}     % Muda para cor preta
+\scriptsize       % Tamanho ainda menor (menor que \footnotesize)
+\textbf{Produzida pela Subcomissão Psicologia, Pessoa com Deficiência e Multiculturalidade do Conselho Regional de Psicologia de São Paulo}
+
+% CRÉDITOS DE PRODUÇÃO
+\fontebook        % Comando personalizado para fonte específica
+\color{crp1}Projeto gráfico \color{black}Micael Melchiades
+% Alterna cores: "Projeto gráfico" em cor CRP, nome em preto
+
+\vspace{-0.618\baselineskip}  % Reduz espaço vertical (número áureo negativo)
+\color{crp1}Preparação de texto \color{black}Angelo Cuissi
+% Mesmo padrão: função em cor CRP, nome em preto
+
+% ESPAÇAMENTO ANTES DA LICENÇA
+\vspace*{1.618\baselineskip}  % Espaço baseado no número áureo (proporção dourada)
+                              % Asterisco garante que o espaço seja mantido
+
+% LOGO DA LICENÇA CREATIVE COMMONS
+\includesvg[width=0.25\textwidth]{by-nc.svg}
+% \includesvg = comando para incluir arquivos SVG (gráficos vetoriais)
+% [width=0.25\textwidth] = largura de 25% da linha de texto
+% {by-nc.svg} = arquivo da licença Creative Commons BY-NC
+
+% TEXTO EXPLICATIVO DA LICENÇA
+\scriptsize  % Texto pequeno para a explicação legal
+Uma licença CC BY-NC foi atribuída a esta obra. São permitidas a remixagem,
+a adaptação e a criação de novas obras com o conteúdo aqui publicado,
+desde que seja dado o devido crédito à obra original e que a obra resultante
+não seja usada para fins comerciais.
+% Texto explicativo da licença Creative Commons Atribuição-NãoComercial
+
+\end{center}             % Fecha o ambiente centralizado
+\end{CreditoInstitucional}  % Fecha o ambiente de formatação de créditos
+
+% ESPAÇAMENTO FINAL
+\vspace*{\fill}  % Empurra qualquer conteúdo seguinte para o final da página
+                 % Asterisco garante que funcione mesmo no final da página
