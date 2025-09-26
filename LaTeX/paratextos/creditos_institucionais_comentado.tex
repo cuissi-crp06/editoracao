@@ -1,0 +1,207 @@
+% TÍTULO PRINCIPAL DA SEÇÃO
+% Este comando cria um título grande para identificar o período do plenário
+\CreditoInstitucionalUm{XVII Plenário (2022–2025)}
+
+% TÍTULO DE SUBSEÇÃO PARA DIRETORIA
+% Este comando cria um subtítulo menor para organizar as informações
+\CreditoInstitucionalDois{Diretoria}
+
+% INÍCIO DO LAYOUT EM DUAS COLUNAS PARA A DIRETORIA
+% Primeira coluna: espaço vazio de 3cm de largura (serve como margem/espaçamento)
+\begin{minipage}{3cm}
+{\null} % Comando que cria um espaço completamente vazio
+\end{minipage}%
+% Segunda coluna: ocupa o restante da largura da linha (\linewidth-3cm)
+\begin{minipage}{\linewidth-3cm}
+% Ambiente especial para formatar os créditos institucionais
+\begin{CreditoInstitucional}
+% Comando para formatar cargos e nomes da diretoria em formato de tabela
+\CargoNosCreditos{%
+    Talita Fabiano de Carvalho &  \textbf{presidenta} \\      % Nome & cargo em negrito, quebra de linha
+    Camila Andrade de Oliveira &  \textbf{vice-presidenta}\\  % & separa colunas, \\ quebra linha
+    Ana Tereza da Silva Marques &  \textbf{secretária}\\      % \textbf{} deixa texto em negrito
+    Eduardo de Menezes Pedroso &  \textbf{tesoureiro} \\     % Última linha também tem \\
+}
+\end{CreditoInstitucional} % Fecha o ambiente de formatação
+\end{minipage} % Fecha a segunda coluna
+
+
+% NOVA SEÇÃO: CONSELHEIRAS/OS EFETIVAS/OS
+\CreditoInstitucionalDois{Conselheiras/os efetivas/os}
+
+% MESMO LAYOUT DE DUAS COLUNAS
+% Coluna 1: Espaço vazio de 3cm (mantém alinhamento com seção anterior)
+\begin{minipage}{3cm}
+{\null} % Espaço vazio
+\end{minipage}%
+% Coluna 2: Lista dos conselheiros efetivos
+\begin{minipage}{\linewidth-3cm}
+\begin{CreditoInstitucional}
+% Comando para listar nomes simples (sem cargos específicos)
+\NomeNosCreditos{%
+    Ana Tereza da Silva Marques (CRP 06/141032)\\    % Nome seguido do número de registro CRP
+    Camila Andrade de Oliveira (CRP 06/94895)\\      % CRP = Conselho Regional de Psicologia
+    Carlos Eduardo Mendes (CRP 06/153775)\\          % Cada linha termina com \\
+    Davi Rodriguez Ruivo Fernandes (CRP 06/118838)\\
+    Dreyf de Assis Gonçalves (CRP 06/55379)\\
+    Eduardo de Menezes Pedroso (CRP 06/122428)\\
+    Ione Aparecida Xavier (CRP 06/27445)\\
+    Janaina Darli Duarte Simão (CRP 06/47523)\\
+    Magna Barboza Damasceno (CRP 06/66384)\\
+    Maria da Glória Calado (CRP 06/33194)\\
+    Maria da Piedade R. de Araujo Melo (CRP 06/45952)\\
+    Marta Eliane de Lima (CRP 06/94890)\\
+    Mayara Aparecida Bonora Freire (CRP 06/120511)\\
+    Mônica Cintrão França Ribeiro (CRP 06/20583)\\
+    Talita Fabiano de Carvalho (CRP 06/71781)\\}    % Última linha: \\ antes da chave de fechamento
+\end{CreditoInstitucional}
+\end{minipage}
+
+% SEÇÃO: CONSELHEIROS SUPLENTES
+\CreditoInstitucionalDois{Conselheiras/os suplentes}
+
+% MESMO PADRÃO DE LAYOUT EM DUAS COLUNAS
+\begin{minipage}{3cm}
+{\null} % Espaço vazio para alinhamento
+\end{minipage}%
+\begin{minipage}{\linewidth-3cm}
+\begin{CreditoInstitucional}
+\NomeNosCreditos{%
+    Gabriela Alvim de Oliveira Freitas (CRP 06/149012)\\  % Lista menor de suplentes
+    Giseli de Fátima Assoni (CRP 06/72980)\\
+    Leonardo Maggi Gambatto (CRP 06/124424)\\
+    Wilson Flávio Lourenço Nogueira (CRP 06/53258)\\}    % 4 suplentes listados
+\end{CreditoInstitucional}
+\end{minipage}
+
+% SEÇÃO: RENÚNCIAS
+\CreditoInstitucionalDois{Renúncias}
+
+% MESMO PADRÃO DE LAYOUT
+\begin{minipage}{3cm}
+{\null}
+\end{minipage}%
+\begin{minipage}{\linewidth-3cm}
+\begin{CreditoInstitucional}
+\NomeNosCreditos{%
+    Annie Louise Saboya Prado (CRP 06/86192)\\       % Lista de pessoas que renunciaram
+    Carú de Paula Seabra M. Ribeiro (CRP 06/136173)\\
+    Fabiana Macena Luiz (CRP 06/148611)\\
+    Ivani Teixeira Mendes (CRP 06/42535)\\
+    Lilian Suzuki (CRP 06/27810)\\
+    Murilo Centrone Ferreira (CRP 06/142583)\\
+    Sonia Maria Motinho da Silva (CRP 06/12033)\\
+    Tayná Alencar Berti de Souza (CRP 06/83455)\\
+    Valeria Campinas Braunstein (CRP 06/31093)\\}   % 9 renúncias registradas
+\end{CreditoInstitucional}
+\end{minipage}
+
+% SEÇÃO: VACÂNCIAS
+\CreditoInstitucionalDois{Vacâncias}
+
+% MESMO PADRÃO DE LAYOUT
+\begin{minipage}{3cm}
+{\null}
+\end{minipage}%
+\begin{minipage}{\linewidth-3cm}
+\begin{CreditoInstitucional}
+\NomeNosCreditos{%
+    Camila Prandini Prandini (CRP 06/157432)\\      % Posições vagas/não preenchidas
+    Luciane de Almeida Jabur (CRP 06/66501)\\}      % Apenas 2 vacâncias
+\end{CreditoInstitucional}
+\end{minipage}
+% COMANDO PARA FORÇAR UMA NOVA PÁGINA
+\clearpage  % Força quebra de página aqui (todo o conteúdo acima fica numa página)
+
+% NOVA PÁGINA: COMISSÃO DE DIREITOS HUMANOS
+\CreditoInstitucionalDois{Comissão de Direitos Humanos (CDH)}
+
+% MESMO PADRÃO DE LAYOUT EM DUAS COLUNAS
+\begin{minipage}{3cm}
+{\null}
+\end{minipage}%
+\begin{minipage}{\linewidth-3cm}
+\begin{CreditoInstitucional}
+% PRESIDENTE DA COMISSÃO (formatação especial com cargo)
+\CargoNosCreditos{Carlos Eduardo Mendes	&  \textbf{presidente}\\}
+% AJUSTE DE ESPAÇAMENTO
+\raggedright\vspace{-0.618\baselineskip}  % \raggedright = alinha à esquerda
+                                           % \vspace{-0.618\baselineskip} = reduz espaço vertical
+
+% MEMBROS DA COMISSÃO (lista simples de nomes)
+\NomeNosCreditos{%
+Ana Tereza da Silva Marques (CRP 06/141032)\\      % Lista extensa de membros da CDH
+Anna Carolina Alencar Betine (CRP 06/145832)\\
+Bárbara Palloma dos Santos (CRP 06/122840)\\
+Bruna Dias Batista (CRP 06/159849)\\
+Davi Rodriguez Ruivo Fernandes (CRP 06/118838)\\
+Fernanda Garcia Estevez (CRP 06/188300)\\
+Francine Nunes Pinto (CRP 06/163628)\\
+Gustavo Renan de Almeida da Silva (CRP 06/151764)\\
+Ione Aparecida Xavier (CRP 06/27445)\\
+Julia Vieira da Conceição (CRP 06/176738)\\
+Kley Anderson de Moraes (CRP 06/120636)\\
+Leonardo Maggi Gambatto (CRP 06/124424)\\
+Luiz Fernando Rodrigues Novais (CRP 06/165953)\\
+Maria da Gloria Calado (CRP 06/33194)\\
+Maria dos Prazeres do N. Loureiro (CRP 06/65378)\\
+Maria Sueila da Silva Ferreira (CRP 06/145164)\\
+Marilia Rangel Machado (CRP 06/125114)\\
+Marta Eliane de Lima (CRP 06/94890)\\
+Thainá da Silva Costa (CRP 06/149425)\\}           % 19 membros na comissão
+\end{CreditoInstitucional}
+\end{minipage}
+
+% SUBCOMISSÃO DENTRO DA CDH
+\CreditoInstitucionalDois{Subcomissão Psicologia, Pessoa com Deficiência e Multiculturalidade}
+
+% MESMO PADRÃO DE LAYOUT
+\begin{minipage}{3cm}
+{\null}
+\end{minipage}%
+\begin{minipage}{\linewidth-3cm}
+\begin{CreditoInstitucional}
+% COORDENADORA DA SUBCOMISSÃO
+\CargoNosCreditos{%
+Ana Tereza da Silva Marques &  \textbf{coordenadora} \\
+}
+% AJUSTE DE ALINHAMENTO (sem redução de espaço desta vez)
+\raggedright%\vspace{-0.618\baselineskip}  % Este comando está comentado (%)
+% MEMBRO DA SUBCOMISSÃO
+\NomeNosCreditos{%
+Ione Aparecida Xavier (CRP 06/27445)\\              % Apenas 1 membro além da coordenadora
+}
+\end{CreditoInstitucional}
+\end{minipage}
+
+% SEÇÃO COMENTADA (CREPOP) - NÃO SERÁ IMPRESSA
+%\CreditoInstitucionalDois{Centro de Referências Técnicas em Psicologia e Políticas Públicas (Crepop/CRP SP)}
+% Todo este bloco está comentado com % no início de cada linha
+% Isso significa que não aparecerá no documento final
+% Provavelmente foi removido temporariamente ou está sendo revisado
+
+%\begin{minipage}{3cm}
+%{\null}
+%\end{minipage}%
+%\begin{minipage}{\linewidth-3cm}
+%\begin{CreditoInstitucional}
+%\CargoNosCreditos{%
+%Mônica Cintrão França Ribeiro &  %\textbf{coordenadora} \\
+%Mayara Aparecida Bonora Freire & \textbf{coordenadora-adjunta}}
+%\raggedright%\vspace{-0.618\baselineskip}
+%
+%\NomeNosCreditos{%
+%Dreyf de Assis Gonçalves (CRP 06/55379)\\
+%Janaina Darli Duarte Simão (CRP 06/47523)\\
+%Magna Barboza Damasceno (CRP 06/66384)\\
+%Talita Fabiano de Carvalho (CRP 06/71781)\\
+%}
+%
+%\CargoNosCreditos{Caio Vinícius Infante de Melo & especialista técnico\\
+%Lucas Alexandrino de Oliveira e\newline Mikaella Vicente & estagiária/o de Psicologia \\
+%}
+%\end{CreditoInstitucional}
+%\end{minipage}
+
+% COMANDO FINAL DE PÁGINA
+\cleartooddpage  % Força uma nova página ímpar (páginas da direita em documentos de duas páginas)
